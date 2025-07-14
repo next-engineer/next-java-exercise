@@ -16,16 +16,16 @@ public class Account {
 
     public void deposit(double amount)      // 입금
     {
+        if(amount < 0) { System.out.println("잘못된 입력입니다."); return; }
         this.balance += amount;
         System.out.println(amount + "원 만큼 입금되었습니다.");
     }
 
     public void withdraw(double amount)    // 출금
     {
-        if( this.balance - amount < 0)
-        {
-            System.out.println("잔액이 부족합니다.");   return;
-        }
+        if(amount < 0) { System.out.println("잘못된 입력입니다."); return; }
+
+        if( this.balance - amount < 0) { System.out.println("잔액이 부족합니다."); return; }
 
         this.balance -= amount;
         System.out.println(amount + "원 만큼 출금되었습니다.");
@@ -49,6 +49,7 @@ public class Account {
 
     public void setAccountNumber(String accountNumber)
     {
+        if(accountNumber == null || accountNumber.isBlank()) { System.out.println("잘못된 입력입니다."); return; }
         this.accountNumber = accountNumber;
     }
 
@@ -59,6 +60,7 @@ public class Account {
 
     public void setOwnerName(String ownerName)
     {
+        if(ownerName == null || ownerName.isBlank()) { System.out.println("잘못된 입력입니다."); return; }
         this.ownerName = ownerName;
     }
 

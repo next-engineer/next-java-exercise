@@ -16,6 +16,8 @@ public class Employee {
 
     public void changeDepartment(String newDepartment)      // 부서 이동(사실상 setter와 같음)
     {
+        if(newDepartment == null || newDepartment.isBlank()) { System.out.println("잘못된 입력입니다."); return; }
+
         System.out.println(this.name + "님의 부서가 " + this.department + "에서 " +
                 newDepartment + "로 변경됩니다.");
         this.department = newDepartment;
@@ -35,5 +37,9 @@ public class Employee {
     public double getSalary() { return this.salary; }
     public String getDepartment() { return this.department; }
 
-    public void setName(String name) { this.name = name; }
+    public void setName(String name)
+    {
+        if(name == null || name.isBlank()) { System.out.println("잘못된 입력입니다."); return; }
+        this.name = name;
+    }
 }
