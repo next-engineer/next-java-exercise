@@ -1,4 +1,4 @@
-package org.example.basic.bangjihyun;
+package org.example.basic.bangjihyun.unitone;
 
 public class Book {
     // 📌 필드
