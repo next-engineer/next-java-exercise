@@ -1,5 +1,7 @@
 package org.example.basic.leehyemin.UnitOne;
 
+import java.util.ArrayList;
+
 public class Book {
     public String title;
     public String author;
@@ -14,7 +16,7 @@ public class Book {
 
     }
 
-    public String toString() {
+    public ArrayList<Book> bookinfo() {
 
         return null;
     }
