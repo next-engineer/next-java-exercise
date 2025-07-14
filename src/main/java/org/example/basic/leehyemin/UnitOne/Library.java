@@ -2,7 +2,7 @@ package org.example.basic.leehyemin.UnitOne;
 
 import java.util.ArrayList;
 
-public class Library extends Book {
+public class Library {
     public ArrayList<Book> books;
     public ArrayList<Member> members;
 
