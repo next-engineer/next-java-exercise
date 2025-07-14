@@ -2,12 +2,12 @@ package org.example.basic.taebinlee.unitone;
 
 public class Book {
     // 필드
-    String title;
-    String author;
-    String isbn;
-    boolean isBorrowed;
+    private String title;
+    private String author;
+    private String isbn;
+    private boolean isBorrowed;
 
-    // 생성자
+    // 생성자(가장 먼저 실행)
     public Book(String title, String author, String isbn) {
         this.title = title;
         this.author = author;
