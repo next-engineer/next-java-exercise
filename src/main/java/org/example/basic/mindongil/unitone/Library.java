@@ -22,8 +22,8 @@ public class Library {
     public String findBookByTitle(String title) {
         String name = "";
         for (Book book : books) {
-            if(Objects.equals(book.title, title)){
-                name = book.title;
+            if(Objects.equals(book.getTitle(), title)){
+                name = book.getTitle();
             }
         }
         return name;
