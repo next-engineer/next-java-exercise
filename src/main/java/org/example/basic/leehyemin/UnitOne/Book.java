@@ -7,7 +7,7 @@ public class Book {
     public String title;
     public String author;
     public String isbn;
-    //true 대여 가능, false 대출 불가
+    //true 대출 불가, false 대출 가능
     public boolean isBorrowed;
 
     //생성자
@@ -36,7 +36,7 @@ public class Book {
     }
 
     public void setIsBorrowed(){
-        this.isBorrowed=true;
+        this.isBorrowed=false;
     }
 
     public boolean getIsBorrowed(){
@@ -45,14 +45,22 @@ public class Book {
 
     //메서드
     public void borrowBook() {
-
+        if(!isBorrowed){
+            isBorrowed=true;
+            System.out.println("책이 되출되었습니다.");
+        } else {
+            System.out.println("이미 대출 중인 책입니다.");
+        }
     }
 
     public void returnBook() {
-
+        if(isBorrowed){
+            isBorrowed=false;
+            System.out.println("반납처리되었습니다.");
+        }
     }
 
-    public ArrayList<Book> bookinfo() {
+    public ArrayList<Book> allBookInfo(String title) {
 
         return null;
     }
