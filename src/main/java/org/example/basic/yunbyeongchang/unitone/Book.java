@@ -2,10 +2,10 @@ package org.example.basic.yunbyeongchang.unitone;
 
 public class Book {
     //var
-    public String title;           // 제목
-    public String author;          // 저자
-    public String isbn;            // 도서번호
-    public boolean isBorrowed;     // 대여 여부
+    private String title;           // 제목
+    private String author;          // 저자
+    private String isbn;            // 도서번호
+    private boolean isBorrowed;     // 대여 여부
 
     //method
     public Book(String title, String author, String isbn, boolean isBorrowed)
@@ -33,4 +33,23 @@ public class Book {
         return this.title + ", " + this.author + ", " + this.isbn;
     }
 
+    public String getTitle()
+    {
+        return this.title;
+    }
+
+    public String getAuthor()
+    {
+        return this.author;
+    }
+
+    public String getIsbn()
+    {
+        return this.isbn;
+    }
+
+    public boolean getIsBorrowed()
+    {
+        return this.isBorrowed;
+    }
 }

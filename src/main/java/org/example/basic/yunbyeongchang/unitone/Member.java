@@ -4,9 +4,9 @@ import java.util.ArrayList;
 
 public class Member {
     //var
-    public String name;                        // 멤버 이름
-    public String memberId;                    // 멤버 ID
-    public ArrayList<Book> borrowedBooks;      // 대여한 책 리스트
+    private String name;                        // 멤버 이름
+    private String memberId;                    // 멤버 ID
+    private ArrayList<Book> borrowedBooks;      // 대여한 책 리스트
     
     //method
     public Member(String name, String memberId)
@@ -39,9 +39,25 @@ public class Member {
     {
         System.out.print(this.name + "님께서 빌린 책 : ");
         for (Book borrowedBook : this.borrowedBooks)
-            System.out.print(borrowedBook.title + " ");
+            System.out.print(borrowedBook.getTitle() + " ");
 
         System.out.println();
+    }
+
+
+    public String getName()
+    {
+        return this.name;
+    }
+
+    public String getMemberId()
+    {
+        return this.memberId;
+    }
+
+    public ArrayList<Book> getBorrowedBooks()
+    {
+        return this.borrowedBooks;
     }
     
 }
