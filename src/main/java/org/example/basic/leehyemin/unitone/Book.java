@@ -1,6 +1,4 @@
-package org.example.basic.leehyemin.UnitOne;
-
-import java.util.ArrayList;
+package org.example.basic.leehyemin.unitone;
 
 public class Book {
     //필드
@@ -42,13 +40,15 @@ public class Book {
     public void borrowBook() {
         if(!isBorrowed){
             isBorrowed=true;
-            System.out.println("책이 되출되었습니다.");
+            System.out.println("책이 대출되었습니다.");
         } else {
             System.out.println("이미 대출 중인 책입니다.");
         }
+        //System.out.println(isBorrowed);
     }
 
     public void returnBook() {
+        //System.out.println(isBorrowed);
         if(isBorrowed){
             isBorrowed=false;
             System.out.println("반납처리되었습니다.");
@@ -59,4 +59,14 @@ public class Book {
         return "책제목 : "+this.title+", 작가 : "+this.author+", 일련번호 : "+this.isbn;
     }
 
+    public static void main(String[] args) {
+        Book book=new Book("자바의 정석", "남궁성", "1234567890");
+        //System.out.println(book.isBorrowed);
+        book.borrowBook();
+        book.borrowBook();
+        //System.out.println(book.isBorrowed);
+        book.returnBook();
+        //System.out.println(book.isBorrowed);
+        System.out.println(book);
+    }
 }
