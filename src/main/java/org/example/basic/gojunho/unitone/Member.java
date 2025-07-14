@@ -22,7 +22,7 @@ public class Member {
             System.out.println("이미 대여된 책입니다");
         }
     }
-    public void returnBook(){
+    public void returnBook(Book book){
         if(borrowedBooks.remove(book)) {
             book.returnBook();
             System.out.println(name+"님이"+book.getTitle()+"책을 반납했습니다");
