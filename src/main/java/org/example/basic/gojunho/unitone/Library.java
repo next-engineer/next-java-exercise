@@ -14,7 +14,7 @@ public class Library {
         books.add(book);
     }
     public void addMember(Member member){
-        member.add(member);
+        members.add(member);
     }
     public Book findBookByTitle(String title){
         for (Book book : books) {
@@ -40,4 +40,4 @@ public class Library {
         }
     }
     }
-}
+

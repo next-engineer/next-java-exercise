@@ -1,7 +1,7 @@
 package org.example.basic.gojunho.unitone;
 
 public class Book {
-    private String title;
+    public String title;
     private String author;
     private String isbn;
     private boolean isBorrowed;
