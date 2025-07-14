@@ -24,12 +24,15 @@ public class Library {
 
     // 책 이름으로 책 찾기
     public Book findBookByTitle(String title){
+        Book result = null;
+
         for(Book item: books){
             if(item.getTitle().equals(title)){
-                return item;
+                result = item;
+                break;
             }
         }
-        return null;
+        return result;
     }
 
     // 모든 책 리스트 출력
