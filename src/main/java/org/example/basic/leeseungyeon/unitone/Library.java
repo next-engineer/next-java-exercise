@@ -3,52 +3,47 @@ package org.example.basic.leeseungyeon.unitone;
 import java.util.ArrayList;
 
 public class Library {
-    private ArrayList<Book> books;
-    private ArrayList<Member> members;
+    private ArrayList<Book> books = new ArrayList<>();
+    private ArrayList<Member> members = new ArrayList<>();
 
-    // 생성자
-    public Library() {
-        this.books = new ArrayList<>();
-        this.members = new ArrayList<>();
-    }
 
-    // 책 추가
+    // 도서관 책 목록에 새 책을 추가
     public void addBook(Book book) {
         books.add(book);
-        System.out.println(book.getTitle() + " 이(가) 도서관에 추가되었습니다.");
+        System.out.println(book.getTitle() + " 제목의 새로운 책을 추가합니다.");
     }
 
-    // 회원 추가
+    // 도서관 회원 목록에 새 회원을 추가
     public void addMember(Member member) {
         members.add(member);
-        System.out.println(member.getName() + " 님이 회원으로 등록되었습니다.");
+        System.out.println(member.getName() + "님을 회원으로 추가합니다.");
     }
 
-    // 제목으로 책 찾기
+    // 제목으로 책을 찾아서 반환
     public Book findBookByTitle(String title) {
         for (Book book : books) {
             if (book.getTitle().equalsIgnoreCase(title)) {
                 return book;
             }
         }
-        System.out.println("해당 제목의 책을 찾을 수 없습니다.");
+        System.out.println(title +" 제목의 책을 찾을 수 없습니다.");
         return null;
     }
 
-    // 전체 책 목록
+    // 도서관에 있는 모든 책의 정보를 출력
     public void listAllBooks() {
-        System.out.println("📘 전체 도서 목록:");
+        System.out.println("도서관에 있는 전체 책 정보:");
         for (Book book : books) {
-            System.out.println("  - " + book);
+            System.out.println(book);
         }
     }
 
-    // 대여 가능한 책 목록
+    // 빌릴 수 있는(대여 중이 아닌) 책만 출력
     public void listAvailableBooks() {
-        System.out.println("📗 대여 가능한 책 목록:");
+        System.out.println("대여 가능 책 목록:");
         for (Book book : books) {
             if (!book.isBorrowed()) {
-                System.out.println("  - " + book);
+                System.out.println(book);
             }
         }
     }
