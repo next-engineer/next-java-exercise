@@ -1,4 +1,4 @@
-package org.example.basic.limjeongwoo;
+package org.example.basic.limjeongwoo.unitone;
 
 import java.util.ArrayList;
 
