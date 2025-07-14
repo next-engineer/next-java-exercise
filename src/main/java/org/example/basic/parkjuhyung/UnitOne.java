@@ -1,4 +1,4 @@
-package org.example.basic.parkjoohyung;
+package org.example.basic.parkjuhyung;
 
 public class UnitOne {
     public static void main(String[] args) {
