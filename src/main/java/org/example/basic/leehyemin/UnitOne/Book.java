@@ -4,39 +4,34 @@ import java.util.ArrayList;
 
 public class Book {
     //필드
-    public String title;
+    private String title;
     public String author;
     public String isbn;
     //true 대출 불가, false 대출 가능
     public boolean isBorrowed;
 
-    //생성자
-    public void setTitle(){
-        this.title=title;
-    }
+    //기본 생성자 : 기본적으로 생성됨
+    public Book(){
 
+    }
+    //매개변수가 있는 생성자
+    public Book(String title, String author, String isbn) {
+        this.title = title;
+        this.author = author;
+        this.isbn = isbn;
+        this.isBorrowed = false;
+    }
+    //getter 메소드
     public String getTitle(){
         return this.title;
-    }
-
-    public void setAuthor(){
-        this.author=author;
     }
 
     public String getAuthor(){
         return this.author;
     }
 
-    public void setIsbn(){
-        this.isbn=isbn;
-    }
-
     public String getIsbn(){
         return this.isbn;
-    }
-
-    public void setIsBorrowed(){
-        this.isBorrowed=false;
     }
 
     public boolean getIsBorrowed(){
@@ -60,8 +55,8 @@ public class Book {
         }
     }
 
-    public ArrayList<Book> allBookInfo(String title) {
-
-        return null;
+    public String toString() {
+        return "책제목 : "+this.title+", 작가 : "+this.author+", 일련번호 : "+this.isbn;
     }
+
 }

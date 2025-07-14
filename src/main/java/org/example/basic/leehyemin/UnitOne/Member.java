@@ -8,24 +8,23 @@ public class Member {
     public String memberId;
     public ArrayList<Book> borrowedBooks;
 
-    public void setName(String name) {
-        this.name = name;
-    }
+    //기본생성자
+    public Member(){
 
+    }
+    //매개변수가 있는 생성자
+    public Member(String name, String memberId,  ArrayList<Book> borrowedBooks){
+        this.name=name;
+        this.memberId=memberId;
+        this.borrowedBooks=borrowedBooks;
+    }
+    //getter 메소드
     public String getName() {
         return this.name;
     }
 
-    public void setMemberId(String memberId) {
-        this.memberId = memberId;
-    }
-
     public String getMemberId() {
         return this.memberId;
-    }
-
-    public void setBorrowedBooks(ArrayList<Book> borrowedBooks) {
-        this.borrowedBooks = borrowedBooks;
     }
 
     public ArrayList<Book> getBorrowedBooks() {
