@@ -7,7 +7,7 @@ public class EmployeeRun {
         System.out.println("이름: " + emp.getName());
         System.out.println("연봉: " + emp.getSalary());
         System.out.println("부서: " + emp.getDepartment());
-
+        System.out.println();
         // 부서 변경
         emp.changeDepartment("마케팅부");
 
