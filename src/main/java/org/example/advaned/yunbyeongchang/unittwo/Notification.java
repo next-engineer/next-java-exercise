@@ -9,4 +9,5 @@ public class Notification {
     {
         System.out.println("이메일 전송 완료");
     }
+
 }
