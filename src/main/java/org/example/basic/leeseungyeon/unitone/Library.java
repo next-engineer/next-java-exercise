@@ -6,7 +6,6 @@ public class Library {
     private ArrayList<Book> books = new ArrayList<>();
     private ArrayList<Member> members = new ArrayList<>();
 
-
     // 도서관 책 목록에 새 책을 추가
     public void addBook(Book book) {
         books.add(book);
@@ -26,7 +25,7 @@ public class Library {
                 return book;
             }
         }
-        System.out.println(title +" 제목의 책을 찾을 수 없습니다.");
+        System.out.println(title + " 제목의 책을 찾을 수 없습니다.");
         return null;
     }
 

@@ -34,16 +34,17 @@ public class Book {
         }
     }
 
-    public boolean isBorrowed() {
-        return isBorrowed;
-    }
-
+    // getter 메서드
     public String getTitle() {
         return title;
     }
 
+    public boolean isBorrowed() {
+        return isBorrowed;
+    }
+
     // 책 정보 문자열 반환
     public String toString() {
-        return "Title: " + title + ", Author: " + author + ", ISBN: " + isbn + ", Borrowed: " + isBorrowed;
+        return "Title: " + title + ", Author: " + author + ", ISBN: " + isbn + ", Borrowed: " + (isBorrowed ? "대여 중" : "대여 가능");
     }
 }
