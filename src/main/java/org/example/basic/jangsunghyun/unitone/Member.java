@@ -1,4 +1,4 @@
-package org.example.basic.parkjoohyung.unitone;
+package org.example.basic.jangsunghyun.unitone;
 
 import java.util.ArrayList;
 
