@@ -4,9 +4,11 @@ public class Main {
 
     public static void main(String[] args)
     {
-        SelectNotification selectNoti = new SelectNotification();
+        SelectNotification selectNotification = new SelectNotification();
 
-        selectNoti.SelectMenu();
-
+        while(true)
+        {
+            selectNotification.SelectMenu();
+        }
     }
 }
