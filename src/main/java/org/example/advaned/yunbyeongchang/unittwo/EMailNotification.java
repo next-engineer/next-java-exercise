@@ -1,11 +1,11 @@
 package org.example.advaned.yunbyeongchang.unittwo;
 
-public class SMSNotification implements Notification{
+public class EMailNotification {
     //var
 
     //method
     public void send()
     {
-        System.out.println("SMS 알림입니다.");
+        System.out.println("Email 알림입니다.");
     }
 }
