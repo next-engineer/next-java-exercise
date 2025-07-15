@@ -1,5 +1,6 @@
 package org.example.basic.kimdonghyun.unittwo;
 
+// 클래스 생성
 public class Account {
     private String AN;
     private String ON;
@@ -8,29 +9,32 @@ public class Account {
 
 
     //생성자
-    private Account(String AN, String ON, double BAL){
+    public Account(String AN, String ON, double BAL){
         this.AN = AN;
         this.ON = ON;
         this.BAL = BAL;}
 
 
+
+
     //입금 메소드
-    private void deposit(double amount){
-        if (amount > 0){
+    public void deposit(double amount){
+        if (amount > 0) {
             BAL += amount;
             System.out.println(amount + "원이 입금 되었습니다.");
+
+            System.out.println("잔액은" + BAL + amount + "입니다.");
         }
-        System.out.println("잔액은" BAL+amount "입니다.");
-        else{
+        else {
             System.out.println("입금액을 확인하십시오.");
         }
     }
 
     //출금 메소드
-    public void withraw(double amount){
+    public void withdraw(double amount){
         if (amount > BAL){
             System.out.println("잔액이 부족합니다.");
-    } else if (amount <= 0){
+        } else if (amount <= 0){
             System.out.println("출금액을 확인하십시오.");
         } else{
             BAL -= amount;
@@ -39,8 +43,11 @@ public class Account {
 
 
     // 계좌 정보 조회
-        public class Accountprocessor{
-        public static void main}
+    }
+    public void printAccountInfo(){
+        System.out.println("계좌번호:" + AN);
+        System.out.println("예금주명:" + ON);
+        System.out.println("잔액:" + BAL + "원");
     }
 
 }
