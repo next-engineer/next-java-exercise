@@ -7,7 +7,7 @@ public class Book {
     public Book() {
         this("책 제목", "저자", 2024);
     }
-    public Book(String title) {
+    public Book(String title, String author) {
         this(title, author, 2024);
     }
     public Book(String title, String author, int year) {

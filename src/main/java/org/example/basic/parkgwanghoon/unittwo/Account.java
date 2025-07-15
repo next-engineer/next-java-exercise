@@ -1,4 +1,4 @@
-package org.example.advanced.parkgwanghoon.unitone;
+package org.example.basic.parkgwanghoon.unittwo;
 public class Account {
     private String accountNumber;
     private String ownerName;

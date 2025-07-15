@@ -1,4 +1,4 @@
-package org.example.advanced.parkgwanghoon.unitTwo;
+package org.example.advaned.parkgwanghoon.unitone;
 
 import java.io.FileWriter;
 import java.io.IOException;
