@@ -1,4 +1,4 @@
-package org.example.basic.leeseungyeon.unitone;
+package org.example.basic.taebinlee.unitone;
 
 import java.util.ArrayList;
 
@@ -14,17 +14,13 @@ public class Member {
         this.borrowedBooks = new ArrayList<>();
     }
 
-    public String getName() {
-        return name;
-    }
-
     // 책 대여
     public void borrow(Book book) {
         if (!book.isBorrowed()) {
             book.borrowBook();
             borrowedBooks.add(book);
         } else {
-            System.out.println( book.getTitle() + " 제목의 책이 이미 대여됐습니다.");
+            System.out.println(book.getTitle() + " 은(는) 이미 대여 중입니다.");
         }
     }
 
@@ -34,22 +30,23 @@ public class Member {
             book.returnBook();
             borrowedBooks.remove(book);
         } else {
-            System.out.println(book.getTitle() + " 제목의 책은 대여하지 않았습니다.");
+            System.out.println(book.getTitle() + " 은(는) 이 회원이 빌린 책이 아닙니다.");
         }
     }
 
     // 대여 중인 책 목록 출력
     public void listBorrowedBooks() {
-        System.out.println(name + "님의 책 대여 목록:");
         if (borrowedBooks.isEmpty()) {
-            System.out.println("대여한 책이 없습니다.");
+            System.out.println(name + " 님은 현재 대여 중인 책이 없습니다.");
         } else {
+            System.out.println(name + " 님의 대여 목록:");
             for (Book book : borrowedBooks) {
-                System.out.println(book);
+                System.out.println("  - " + book);
             }
         }
     }
+
+    public String getName() {
+        return name;
+    }
 }
-
-
-
