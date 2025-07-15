@@ -1,4 +1,4 @@
-package org.example.jangsughyun.unitone;
+package org.example.basic.jangsunghyun.unitone;
 
 public class main {
 }
