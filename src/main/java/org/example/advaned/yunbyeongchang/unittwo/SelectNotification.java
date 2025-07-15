@@ -9,6 +9,13 @@ public class SelectNotification {
     private PushNotification pushNoti;
 
     //method
+    public SelectNotification()
+    {
+        this.emailNoti = new EMailNotification();
+        this.smsNoti = new SMSNotification();
+        this.pushNoti = new PushNotification();
+    }
+
     public void SelectMenu()
     {
         System.out.println("--------------------");
