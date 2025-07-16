@@ -6,12 +6,12 @@ import java.util.Scanner;
 
 public class Menu {
     //var
-    public  Scanner sc;
-    public ArrayList<Student> students;
+    private Scanner sc;
+    private ArrayList<Student> students;
+    private StudentPrint studentPrint;
 
     //method
-    public Menu()
-    {
+    public Menu() {
         students = new ArrayList<>();
         sc = new Scanner(System.in);
     }
@@ -38,14 +38,16 @@ public class Menu {
                 addStudent();
                 break;
             case 2:
-                for (Student student : students)
-                    student.printInfo();
+                studentPrint = new StudentListPrint();
+                studentPrint.print(students);
                 break;
             case 3:
-                inputScore();
+                studentPrint = new ScoreFilterPrint();
+                studentPrint.print(students);
                 break;
             case 4:
-                sortStudent(students);
+                studentPrint = new SortPrint();
+                studentPrint.print(students);
                 break;
             case 5:
                 System.out.println("시스템을 종료합니다.");
@@ -53,12 +55,10 @@ public class Menu {
                 break;
             default:
                 System.out.println("잘못된 입력입니다.");
-                break;
         }
     }
 
-    public void addStudent()
-    {
+    public void addStudent() {
         System.out.print("학생의 이름을 입력해주세요.: ");
         String name = sc.next();
 
@@ -66,28 +66,6 @@ public class Menu {
         int score = sc.nextInt();
 
         this.students.add(new Student(name, score));
-    }
-
-    public void inputScore()
-    {
-        System.out.print("점수를 입력해주세요.: ");
-        int score = sc.nextInt();
-        System.out.println("---------------------");
-        System.out.println(score + "점 이상 학생");
-
-        for (Student student : students)
-            student.getHighScore(score);
-    }
-
-
-    public static void sortStudent(ArrayList<Student> students)
-    {
-        students.sort(Comparator.comparingInt(Student::getScore));
-        System.out.println("---------------------");
-        System.out.println("점수 순서대로 정렬 후 출력");
-
-        for(Student student : students)
-            student.printInfo();
     }
 
 }
