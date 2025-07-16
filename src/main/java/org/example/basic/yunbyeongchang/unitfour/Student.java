@@ -24,4 +24,14 @@ public class Student {
         if(this.score >= 90) this.printInfo();
     }
 
+    public String getName()
+    {
+        return this.name;
+    }
+
+    public int getScore()
+    {
+        return this.score;
+    }
+
 }
