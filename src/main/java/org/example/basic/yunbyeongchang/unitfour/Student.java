@@ -1,5 +1,8 @@
 package org.example.basic.yunbyeongchang.unitfour;
 
+import java.util.ArrayList;
+import java.util.Comparator;
+
 public class Student {
     //var
     private String name;
@@ -19,10 +22,11 @@ public class Student {
         System.out.println("점수: " + this.score);
     }
 
-    public void getHighScore()      // 고득점 학생 출력
+    public void getHighScore(int num)      // 고득점 학생 출력
     {
-        if(this.score >= 90) this.printInfo();
+        if(this.score >= num) this.printInfo();
     }
+
 
     public String getName()
     {
