@@ -33,17 +33,17 @@ public class Book {
             System.out.println(title + " 제목의 책을 대여하지 않았습니다.");
         }
     }
-
+  
+    // getter 메서드
+    public String getTitle() {
+        return title;
+    }
     public boolean isBorrowed() {
         return isBorrowed;
     }
 
-    public String getTitle() {
-        return title;
-    }
-
     // 책 정보 문자열 반환
     public String toString() {
-        return "Title: " + title + ", Author: " + author + ", ISBN: " + isbn + ", Borrowed: " + isBorrowed;
+        return "Title: " + title + ", Author: " + author + ", ISBN: " + isbn + ", Borrowed: " + (isBorrowed ? "대여 중" : "대여 가능");
     }
 }
