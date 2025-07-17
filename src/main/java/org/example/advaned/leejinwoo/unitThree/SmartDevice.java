@@ -18,5 +18,6 @@ public class SmartDevice {
         smartSpeakerDevice.musicStart();
         smartSpeakerDevice.musicStop();
         smartSpeakerDevice.turnOff();
+        //test
     }
 }
