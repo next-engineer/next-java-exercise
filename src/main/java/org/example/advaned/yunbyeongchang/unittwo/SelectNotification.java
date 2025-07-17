@@ -12,7 +12,7 @@ public class SelectNotification {
         this.strategy = new PlayStrategy();
     }
 
-    public void SelectMenu()
+    public void selectMenu()
     {
         System.out.println("--------------------");
         System.out.println("메뉴를 선택해 주세요.");
@@ -24,6 +24,11 @@ public class SelectNotification {
         Scanner sc = new Scanner(System.in);
         int inputValue = sc.nextInt();
 
+        confirmValue(inputValue);
+    }
+
+    public void confirmValue(int inputValue)
+    {
         switch (inputValue)
         {
             case 1:     // Email
@@ -44,7 +49,6 @@ public class SelectNotification {
         }
 
         if(this.strategy != null) this.strategy.send();
-
     }
 
 }

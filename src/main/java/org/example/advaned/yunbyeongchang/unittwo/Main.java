@@ -8,7 +8,7 @@ public class Main {
 
         while(true)
         {
-            selectNotification.SelectMenu();
+            selectNotification.selectMenu();
         }
     }
 }
