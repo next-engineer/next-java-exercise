@@ -1,4 +1,4 @@
-package org.example.advaned.parkgwanghoon.unittwo;
+package org.example.advaned.parkgwanghoon.UnitTwo;
 
 public class ReportPrinter {
     public void print(Report report) {

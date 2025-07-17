@@ -1,4 +1,4 @@
-package org.example.advaned.parkgwanghoon.unittwo;
+package org.example.advaned.parkgwanghoon.UnitTwo;
 
 public class Main {
     public static void main(String[] args) {

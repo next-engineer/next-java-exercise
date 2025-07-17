@@ -1,4 +1,4 @@
-package org.example.advaned.parkgwanghoon.unittwo;
+package org.example.advaned.parkgwanghoon.UnitTwo;
 
 public class Report {
     private String title;

@@ -1,4 +1,4 @@
-package org.example.basic.parkgwanghoon.unittwo;
+package org.example.basic.parkgwanghoon.UnitTwo;
 
 public class AccountProcessor {
         public static void main(String[] args) {
