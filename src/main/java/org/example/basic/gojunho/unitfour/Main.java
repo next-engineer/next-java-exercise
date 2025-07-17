@@ -4,10 +4,10 @@ import java.util.*;
 
 public class Main {
     public static void main(String args[]){
-        Student student1 = new Student("두팔",90);
-        Student student2 = new Student("광팔",70);
-        Student student3 = new Student("공팔",80);
-        Student student4 = new Student("종팔",100);
+        Student student1 = new Student("두팔",0);
+        Student student2 = new Student("광팔",0);
+        Student student3 = new Student("공팔",0);
+        Student student4 = new Student("종팔",0);
         int sum=0;
         List<Student> studentList= Arrays.asList(student1,student2,student3,student4);
         Scanner sc = new Scanner(System.in);
