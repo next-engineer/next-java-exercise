@@ -1,14 +1,23 @@
 package org.example.advaned.yunbyeongchang.unitfour;
 
+import java.util.ArrayList;
+
 public class Main {
     //method
     public static void main(String[] args)
     {
-        Rectangle rect = new Square();
-        rect.setHeight(5);
+        Rectangle rect = new Rectangle();
+        Square square = new Square();
+
+        rect.setWidth(5);
         rect.setHeight(10);
 
-        System.out.println("예상 넓이: 5 * 10 == 50");
-        System.out.println("rect의 넓이: " + rect.getArea());
+        square.setWidth(5);
+
+        Shape[] shapes = {rect, square};
+
+        for (Shape shape : shapes)
+            System.out.println("넓이: " + shape.getArea());
+
     }
 }

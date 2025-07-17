@@ -2,8 +2,8 @@ package org.example.advaned.yunbyeongchang.unitfour;
 
 public class Rectangle extends Shape{
     //var
-    protected int width;
-    protected int height;
+    private int width;
+    private int height;
 
     //method
     public Rectangle()
@@ -25,6 +25,6 @@ public class Rectangle extends Shape{
     @Override
     public int getArea()                    // 넓이 출력
     {
-        return this.width * this.height;
+        return width * height;
     }
 }
