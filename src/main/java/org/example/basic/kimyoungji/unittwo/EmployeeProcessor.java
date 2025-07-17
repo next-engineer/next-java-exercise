@@ -1,4 +1,4 @@
-package org.example.basic.kimyoungji.unitone;
+package org.example.basic.kimyoungji.unittwo;
 
 public class EmployeeProcessor {
     public static void main(String[] args) {

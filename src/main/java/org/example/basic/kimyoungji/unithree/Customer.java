@@ -1,4 +1,4 @@
-package org.example.basic.kimyoungji.unittwo;
+package org.example.basic.kimyoungji.unithree;
 
 public class Customer {
     private String name;
