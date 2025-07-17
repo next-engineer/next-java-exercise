@@ -1,4 +1,4 @@
 package org.example.advaned.mindongil.unitthree;
 
-public interface SmartDevice {
-}
+//public interface SmartDevice {
+//}
