@@ -15,7 +15,10 @@ public class NotificationSender {
 
         System.out.println("알림 받으실 방식의 번호를 선택하세요. [이메일: 1, SMS: 2, PUSH: 3]");
         String str = sc.nextLine();
+        matchAnswer(str);
+    }
 
+    public void matchAnswer(String str) {
         // 숫자인지 아닌지 판별
         if (str.chars().allMatch(Character::isDigit)) {
             // 세 자리 수까지인지 판별
@@ -32,26 +35,28 @@ public class NotificationSender {
                     if(used.contains(num)){
                         continue;
                     }
-
                     used.add(num);
-
-                    switch (num) {
-                        case 1:
-                            email.send();
-                            break;
-                        case 2:
-                            sms.send();
-                            break;
-                        case 3:
-                            push.send();
-                            break;
-                    }
+                    sendSwitch(num);
                 }
             } else {
                 System.out.println("선택할 수 있는 갯수를 넘겼습니다.");
             }
         } else {
             System.out.println("번호가 아닙니다. 번호를 선택해주세요.");
+        }
+    }
+
+    public void sendSwitch(int num) {
+        switch (num) {
+            case 1:
+                email.send();
+                break;
+            case 2:
+                sms.send();
+                break;
+            case 3:
+                push.send();
+                break;
         }
     }
 }
