@@ -1,4 +1,4 @@
-package org.example.advaned.parkgwanghoon.unittwo;
+package org.example.basic.parkgwanghoon.UnitThree;
 
 public class Customer {
     private String name;

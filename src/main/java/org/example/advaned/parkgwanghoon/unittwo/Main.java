@@ -2,15 +2,12 @@ package org.example.advaned.parkgwanghoon.unittwo;
 
 public class Main {
     public static void main(String[] args) {
-        Customer customer = new Customer("김부자", "GOLD");
+        Report report = new Report("Supernova", "잔인한 퀸이며 씬이자 종결 \n 이토록 거대한 내 안의 익스플로전 \n 내 모든 세포 별로부터 만들어져");
 
-        int price = 10000;
+        ReportPrinter printer = new ReportPrinter();
+        printer.print(report);  // 출력
 
-        System.out.println("=== 결제내역 ===");
-        int finalPrice = customer.calculateDiscountPrice(price);
-        System.out.println("할인가: ￦" + finalPrice);
-        customer.earnPoints(finalPrice);
-        System.out.println("=== 고객 정보 ===");
-        customer.showCustomerInfo();
+        ReportSaver saver = new ReportSaver();
+        saver.save(report, "report.txt");  // 파일 저장
     }
 }
