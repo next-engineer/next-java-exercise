@@ -4,7 +4,8 @@ import java.util.ArrayList;
 import java.util.Collections;
 
 public class studentmain {
-    public static void main(String[] args){
+
+    public static void main(String[] args) {
         ArrayList<Student> students = new ArrayList<>();
 
         students.add(new Student("홍길동", 85));
@@ -15,28 +16,28 @@ public class studentmain {
 
         System.out.println("모든 학생 정보 출력");
         System.out.println("--------------------------------");
+
         int totalScore = 0;
+        for (Student student : students) {
+            student.printInfo();
+            totalScore += student.getScore();  // Accumulate score
+        }
 
-        for(Student student : students){
-            student.printlnfo();
-        } //향상된 for문으로 학생 정보 출력
-
-        double avg=(double)totalScore/students.size();
-        System.out.println("학생생 : " + students.size());
+        double avg = (double) totalScore / students.size();
+        System.out.println("학생수 : " + students.size());
         System.out.println("평균 점수 : " + avg);
 
         System.out.println("\n=== 90점 이상 학생 ===");
         for (Student s : students) {
-            if (s.gethighScore()) {
-                s.printlnfo();  // 향상된 for문 사용
+            if (s.getScore() >= 90) {
+                s.printInfo();
             }
         }
 
         System.out.println("\n=== 점수 높은 순 정렬 ===");
-        Collections.sort(students, (a, b) -> b.getscore() - a.getscore());
+        Collections.sort(students, (a, b) -> b.getScore() - a.getScore());  // Fix method name
         for (Student s : students) {
-            s.printlnfo();  // 향상된 for문 사용
+            s.printInfo();
         }
-
     }
 }
