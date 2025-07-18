@@ -5,7 +5,7 @@ CREATE TABLE customers {
 };
 
 -- orders table
-CREATE TABLE orders{
+CREATE TABLE orders {
     order_id INT PRIMARY KEY,
     customer_id INT,
     order_date DATE
@@ -13,13 +13,13 @@ CREATE TABLE orders{
 };
 
 -- items table
-CREATE TABLE items{
+CREATE TABLE items {
   item_id INT PRIMARY KEY,
   name VARCHAR(100)
 };
 
 -- order_items table
-CREATE TABLE order_items{
+CREATE TABLE order_items {
     order_item_id INT PRIMARY KEY,
     order_id INT,
     item_id INT,
