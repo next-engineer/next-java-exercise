@@ -1,4 +1,4 @@
-package org.example;
+package org.example.basic.bangjihyun.test;
 
 public class Book {
     private String title;

@@ -1,1 +1,0 @@
-rootProject.name = "next-java-exercise2"
