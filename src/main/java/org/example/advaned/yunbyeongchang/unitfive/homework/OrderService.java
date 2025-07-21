@@ -13,4 +13,9 @@ public class OrderService {
     public void checkout(int amount) {
         payment.pay(amount);
     }
+
+//    public void setOrderService(Payment payment)
+//    {
+//        this.payment = payment;
+//    }
 }

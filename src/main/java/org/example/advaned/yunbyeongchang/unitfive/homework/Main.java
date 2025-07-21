@@ -16,5 +16,17 @@ public class Main {
         bankOrderService.checkout(3000);
         pointOrderService.checkout(500);
         voucherOrderService.checkout(1000);
+
+//        OrderService orderService = new OrderService(new CardPayment());
+//        orderService.checkout(1000);
+//
+//        orderService.setOrderService(new BankTransfer());
+//        orderService.checkout(3000);
+//
+//        orderService.setOrderService(new PointPayment());
+//        orderService.checkout(500);
+//
+//        orderService.setOrderService(new VoucherPayment());
+//        orderService.checkout(5000);
     }
 }
