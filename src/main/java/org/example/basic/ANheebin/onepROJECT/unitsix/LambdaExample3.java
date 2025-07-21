@@ -5,7 +5,7 @@ import java.util.function.Consumer;
 
 public class LambdaExample3 {
     public static void main(String[] args) {
-        List<String> nums =Arrays.asList(10, 20, 30);
+        List<Integer> nums=Arrays.asList(10, 20, 30);
 
         Consumer<Integer> printNum = n -> System.out.println("값: " + n);
 
