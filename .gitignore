@@ -3,7 +3,10 @@ build/
 !gradle/wrapper/gradle-wrapper.jar
 !**/src/main/**/build/
 !**/src/test/**/build/
+<<<<<<< HEAD
 
+=======
+>>>>>>> main
 ### IntelliJ IDEA ###
 .idea/
 *.iws
@@ -12,7 +15,10 @@ build/
 out/
 !**/src/main/**/out/
 !**/src/test/**/out/
+<<<<<<< HEAD
 
+=======
+>>>>>>> main
 ### Eclipse ###
 .apt_generated
 .classpath
@@ -24,16 +30,27 @@ out/
 bin/
 !**/src/main/**/bin/
 !**/src/test/**/bin/
+<<<<<<< HEAD
 
+=======
+>>>>>>> main
 ### NetBeans ###
 /nbproject/private/
 /nbbuild/
 /dist/
 /nbdist/
 /.nb-gradle/
+<<<<<<< HEAD
 
 ### VS Code ###
 .vscode/
 
 ### Mac OS ###
 .DS_Store
+=======
+### VS Code ###
+.vscode/
+### Mac OS ###
+.DS_Store
+.lock
+>>>>>>> main
