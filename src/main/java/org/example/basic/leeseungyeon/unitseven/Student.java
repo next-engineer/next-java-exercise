@@ -1,4 +1,4 @@
-package main.java.org.example.basic.leeseungyeon.unitseven;
+package org.example.basic.leeseungyeon.unitseven;
 
 public class Student extends Person {
     String school;
