@@ -9,7 +9,7 @@ public class Computer {
     private final boolean wifiEnabled;
 
     //method
-    public Computer(ComputerBuilder builder)
+    private Computer(ComputerBuilder builder)
     {
         this.cpu = builder.cpu;
         this.ram = builder.ram;
