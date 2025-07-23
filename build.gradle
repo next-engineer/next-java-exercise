@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 plugins {
     id 'java'
 }
@@ -17,7 +17,7 @@ dependencies {
 
 test {
     useJUnitPlatform()
-=======
+
 plugins {
     id 'java'
 }
@@ -36,5 +36,6 @@ dependencies {
 
 test {
     useJUnitPlatform()
->>>>>>> main
+
+}       
 }
