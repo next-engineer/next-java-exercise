@@ -1,18 +1,23 @@
 package main.java.org.example.basic.leeseungyeon.unitnine;
 
+import java.util.ArrayList;
+
 public class Main {
     public static void main(String[] args) {
-        Student s1 = new Student("신짱구", 85);
-        s1.printInfo();  // 이름: 신짱구, 점수: 85
+        // 학생 3명 생성
+        Student s1 = new Student("남도일", 85, 3);
+        Student s2 = new Student("유미란", 92, 5);
+        Student s3 = new Student("하인성", 76, 2);
 
-        // 점수 변경
-        s1.setScore(95);
-        s1.printInfo();  // 이름: 신짱구, 점수: 95
+        // 리스트에 추가
+        ArrayList<Student> students = new ArrayList<>();
+        students.add(s1);
+        students.add(s2);
+        students.add(s3);
 
-        // 잘못된 점수 입력
-        s1.setScore(150);  // 경고 출력
-
-        // 직접 접근 시도 (컴파일 오류)
-        // s1.score = 50;  // 에러: score는 private 접근 불가
+        // 전체 출력
+        for (Student s : students) {
+            s.printInfo();
+        }
     }
 }
