@@ -1,16 +1,20 @@
+import org.example.basic.taeyeon.unitone.string;
+
 public class calulater {
     private static Object system;
 
     public static int add(int x, int y) { return  x + y
     }
 public static  void main (string[] args) {int result = add(5, 3);
-    System system;
-    system.out.prntln("5 + 3 =" + result);}
+    System system = null;
+    system.out.println("5 + 3 =" + result);}
 }
 import java.util.function.bifuction;
-public class calculator { public static void main(string[] args) {
+public class calculator { public static <integer, bifunction> void main(string[] args) {
     //람다식 정의
-    bifunction<integer, integer, integer> add = (x,y) -> x+y;
+    bifunction add = (x, y) -> {
+        return x + y;
+    };
    //람다식 호출
     int result =add,apply(5,3);
 system.out.println("5 + 3 =" + result);
