@@ -7,7 +7,7 @@ public class Main {
 
         // 점수 변경
         s1.setScore(95);
-        s1.printInfo();  // 이름: 홍길동, 점수: 95
+        s1.printInfo();  // 이름: 신짱구, 점수: 95
 
         // 잘못된 점수 입력
         s1.setScore(150);  // 경고 출력
