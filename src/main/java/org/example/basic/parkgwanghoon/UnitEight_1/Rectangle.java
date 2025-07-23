@@ -1,4 +1,4 @@
-package org.example.basic.parkgwanghoon.UnitEight;
+package org.example.basic.parkgwanghoon.UnitEight_1;
 
 public class Rectangle extends Shape {
     private double width;
