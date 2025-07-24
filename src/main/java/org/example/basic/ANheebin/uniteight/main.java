@@ -1,4 +1,4 @@
-package org.example.basic.ANheebin.onepROJECT.uniteight;
+package org.example.basic.ANheebin.uniteight;
 
 class Main {
     public static void main(String[] args) {

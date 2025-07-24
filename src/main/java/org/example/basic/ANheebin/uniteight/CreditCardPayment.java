@@ -1,4 +1,8 @@
-package org.example.basic.ANheebin.onepROJECT.uniteight;
+package org.example.basic.ANheebin.uniteight;
+
+interface Payment {
+    void pay(int amount);
+}
 
 public class CreditCardPayment implements Payment {
     @Override
