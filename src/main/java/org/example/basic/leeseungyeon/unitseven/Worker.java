@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-package main.java.org.example.basic.leeseungyeon.unitseven;
-=======
 package org.example.basic.leeseungyeon.unitseven;
->>>>>>> 5a75d72b88570db18af6ff9329710c6db5ba3097
 
 public class Worker extends Person {
     String company;
