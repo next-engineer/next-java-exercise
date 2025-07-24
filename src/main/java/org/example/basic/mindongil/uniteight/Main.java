@@ -5,10 +5,10 @@ public class Main {
     public static void main(String[] args) {
 
         //넓이 구하기 추상 클래스 사용
-        Shape ractangle = new Rectangle(4,5);
+        Shape rectangle = new Rectangle(4,5);
         Shape circle = new Circle(5);
 
-        System.out.println("사각형의 넓이: " + ractangle.area());
+        System.out.println("사각형의 넓이: " + rectangle.area());
         System.out.println("원의 넓이: " + circle.area());
 
         //계산 방식 인터페이스 사용
