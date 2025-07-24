@@ -12,3 +12,5 @@ public class Main {
         method = new KakaoPay();
         method.pay(7000);  // 출력: KakaoPay paid: 7000
     }
+}
+
