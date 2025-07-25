@@ -1,4 +1,4 @@
-package main.java.org.example.basic.leeseungyeon.unitten.Box;
+package org.example.basic.leeseungyeon.unitten.Box;
 
 public class Box<T> {
     private T item;

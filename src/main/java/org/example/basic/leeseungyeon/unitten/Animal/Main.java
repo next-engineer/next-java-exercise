@@ -1,4 +1,4 @@
-package main.java.org.example.basic.leeseungyeon.unitten.Animal;
+package.org.example.basic.leeseungyeon.unitten.Animal;
 
 import java.util.List;  // 이걸 추가하세요
 
