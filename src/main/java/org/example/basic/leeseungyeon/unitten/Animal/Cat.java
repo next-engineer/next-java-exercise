@@ -1,4 +1,4 @@
-package.org.example.basic.leeseungyeon.unitten.Animal;
+package org.example.basic.leeseungyeon.unitten.Animal;
 
 public class Cat extends Animal {
     @Override

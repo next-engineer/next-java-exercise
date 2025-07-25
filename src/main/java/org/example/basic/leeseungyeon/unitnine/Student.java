@@ -1,4 +1,4 @@
-package main.java.org.example.basic.leeseungyeon.unitnine;
+package org.example.basic.leeseungyeon.unitnine;
 
 public class Student {
     private String name;
