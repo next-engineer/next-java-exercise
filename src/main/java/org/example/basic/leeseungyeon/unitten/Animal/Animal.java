@@ -1,4 +1,4 @@
-package main.java.org.example.basic.leeseungyeon.unitten.Animal;
+package org.example.basic.leeseungyeon.unitten.Animal;
 
 public class Animal {
     public void sound() {

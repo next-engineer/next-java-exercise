@@ -1,4 +1,4 @@
-package main.java.org.example.basic.leeseungyeon.unitnine;
+package org.example.basic.leeseungyeon.unitnine;
 
 import java.util.ArrayList;
 

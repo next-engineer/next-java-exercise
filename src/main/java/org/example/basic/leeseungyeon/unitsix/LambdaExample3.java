@@ -1,4 +1,4 @@
-package main.java.org.example.basic.leeseungyeon.unitsix;
+package org.example.basic.leeseungyeon.unitsix;
 
 import java.util.function.Consumer;
 import java.util.Arrays;

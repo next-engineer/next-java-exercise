@@ -1,4 +1,4 @@
-package main.java.org.example.basic.leeseungyeon.unitten.Util;
+package org.example.basic.leeseungyeon.unitten.Util;
 
 public class Util {
     public static <T> void printAll(T[] arr) {
