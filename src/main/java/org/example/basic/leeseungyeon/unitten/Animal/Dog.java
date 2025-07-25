@@ -1,6 +1,7 @@
-package main.java.org.example.basic.leeseungyeon.unitten.Animal;
+package.org.example.basic.leeseungyeon.unitten.Animal;
 
-class Dog extends Animal {
+public class Dog extends Animal {
+    @Override
     public void sound() {
         System.out.println("멍멍!");
     }
