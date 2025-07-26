@@ -9,7 +9,7 @@ public class Student {
     public static void main(String[] args)
     {
         //생성
-        List<String> students = new ArrayList<>();
+        List<String> students = new ArrayList<>(Arrays.asList("Gregor"));
 
         //추가
         students.add("Alice");  students.add("Bob");  students.add("Charlie");
