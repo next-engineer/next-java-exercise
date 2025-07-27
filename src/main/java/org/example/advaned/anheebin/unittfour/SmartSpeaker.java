@@ -1,4 +1,4 @@
-package org.example.advaned.parkjoohyung.unittfour;
+package org.example.advaned.anheebin.unittfour;
 
 public class SmartSpeaker implements PowerControllable, MusicPlayable {
     @Override
