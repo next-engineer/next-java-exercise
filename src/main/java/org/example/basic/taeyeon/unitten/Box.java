@@ -5,5 +5,6 @@ public class Box<T> {
     }
 
     public boolean get() {
+        return false;
     }
 }
