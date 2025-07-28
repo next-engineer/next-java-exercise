@@ -1,4 +1,4 @@
-package org.example.basic.taeyeon.unittwelve;
+package org.example.basic.taeyeon.unitsix;
 
 public class Exception extends Throwable {
     public Exception(String message) {
