@@ -1,6 +1,5 @@
 package org.example.basic.leeseungyeon.uniteight;
 
-// 메인 클래스
 public class Main {
     public static void main(String[] args) {
         // 다형성 활용

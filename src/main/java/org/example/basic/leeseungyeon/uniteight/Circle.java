@@ -1,7 +1,6 @@
 package org.example.basic.leeseungyeon.uniteight;
 
-// Circle 클래스 (Shape를 상속)
-class Circle extends Shape {
+public class Circle extends Shape {
     private double radius;
 
     // 생성자
@@ -14,4 +13,6 @@ class Circle extends Shape {
     double area() {
         return Math.PI * radius * radius;  // 원의 면적 = π * r^2
     }
+
+
 }
