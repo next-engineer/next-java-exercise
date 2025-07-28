@@ -5,11 +5,11 @@ import java.util.Scanner;
 
 public class ScannerNumber {
     //var
-    Scanner sc;
+    private final Scanner sc;
 
     //method
-    public ScannerNumber() {
-        this.sc = new Scanner(System.in);
+    public ScannerNumber(Scanner sc) {
+        this.sc = sc;
     }
 
     public int inputNumber() throws InputMismatchException {

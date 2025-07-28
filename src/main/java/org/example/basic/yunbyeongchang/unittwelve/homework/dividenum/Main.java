@@ -2,6 +2,7 @@ package org.example.basic.yunbyeongchang.unittwelve.homework.dividenum;
 
 import java.util.InputMismatchException;
 import java.util.OptionalInt;
+import java.util.Scanner;
 
 public class Main {
     //var
@@ -9,19 +10,30 @@ public class Main {
 
     //method
     public static void main(String[] args) {
-        ScannerNumber scannerNumber = new ScannerNumber();
-        int[] numbers = new int[INPUT_COUNT];
+        int[] numbers;
+
+        try(Scanner scanner = new Scanner(System.in)) {
+            ScannerNumber scannerNumber = new ScannerNumber(scanner);
+            numbers = readNumbers(scannerNumber);
+        }
+
+        printResult(numbers);
+
+    }
+
+    public static int[] readNumbers(ScannerNumber scannerNumber)
+    {
+        int[] var = new int[INPUT_COUNT];
         int count = 0;
 
         while(count < INPUT_COUNT) {
             OptionalInt input = promptInputNumber(scannerNumber);          //null값 확인을 위한 타입
             if(input.isPresent()) {
-                numbers[count++] = input.getAsInt();                      //배열에 값 기입
+                var[count++] = input.getAsInt();                      //배열에 값 기입
             }
         }
 
-        printResult(numbers);
-
+        return var;
     }
 
     public static void printResult(int[] numbers)
@@ -34,6 +46,7 @@ public class Main {
     public static OptionalInt promptInputNumber(ScannerNumber scannerNumber)
     {
         System.out.println("숫자를 입력하세요.");
+
         try {
             return OptionalInt.of(scannerNumber.inputNumber());
         } catch(InputMismatchException e) {                                    //잘못된 값 입력 시
