@@ -1,0 +1,13 @@
+package org.example.basic.limjeongwoo.unitten.calculator;
+
+import java.util.List;
+
+class PriceCalculator {
+    public static <T extends Product> double calculateTotal(List<T> list) {
+        double total = 0;
+        for (T item : list) {
+            total += item.getPrice();
+        }
+        return total;
+    }
+}
