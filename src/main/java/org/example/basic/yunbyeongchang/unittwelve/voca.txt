@@ -1,0 +1,20 @@
+try {
+    // 예외 발생 가능성 있는 코드
+} catch (ExceptionType name) {
+    // 예외 처리 코드
+} finally {
+    // 항상 실행되는 블록 (선택)
+}
+
+public void readFile(String filename) throws IOException {
+    // 파일 처리 코드
+}
+
+자주 쓰는 예외 클래스
+
+`NullPointerException`  null 객체 참조 시
+`ArithmeticException`  0으로 나눌 때
+`ArrayIndexOutOfBoundsException`  배열 인덱스 범위 초과
+`NumberFormatException`  문자열을 숫자로 변환 실패
+`IOException`  입출력 오류 발생 시
+`IllegalArgumentException`  잘못된 인자 전달
