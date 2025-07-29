@@ -15,5 +15,7 @@ public class Main {
         OrderService order_point=new OrderService(point);
         order_point.checkout(52000);
 
+
+
     }
 }
