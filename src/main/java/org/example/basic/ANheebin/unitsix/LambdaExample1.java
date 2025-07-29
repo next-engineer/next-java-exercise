@@ -1,8 +1,4 @@
-<<<<<<< HEAD:src/main/java/org/example/basic/ANheebin/unitsix/LambdaExample1.java
-package org.example.basic.ANheebin.onepROJECT.unitsix;
-=======
-package org.example.basic.leeseungyeon.unitsix;
->>>>>>> fc078c1a9a60aeb6103d98986f332d29b32088d6:src/main/java/org/example/basic/leeseungyeon/unitsix/LambdaExample1.java
+package main.java.org.example.basic.ANheebin.unitsix;
 
 public class LambdaExample1 {
     public static void main(String[] args) {
