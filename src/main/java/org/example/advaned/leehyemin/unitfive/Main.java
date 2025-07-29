@@ -32,5 +32,7 @@ public class Main {
         order_point.checkout(52000);
 >>>>>>> 5a75d72b88570db18af6ff9329710c6db5ba3097
 
+
+
     }
 }
