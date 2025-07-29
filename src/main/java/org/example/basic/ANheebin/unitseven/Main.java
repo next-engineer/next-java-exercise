@@ -1,4 +1,4 @@
-package org.example.basic.ANheebin.onepROJECT.unitseven;
+package org.example.basic.ANheebin.unitseven;  
 
 public class Main {
     public static void main(String[] args) {
