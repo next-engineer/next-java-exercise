@@ -9,7 +9,7 @@ public class PizzaSchool {
 
         pizza = new Cheese(pizza);
         pizza = new Pepperoni(pizza);
-        pizza = new Pepperoni(pizza);
+        pizza = new Cheese(pizza);
 
         System.out.println("Order: " + pizza.getDescription());
         System.out.println("Price: " + pizza.getCost() + "KRW");
