@@ -1,4 +1,4 @@
-package org.example.advaned.leejinwoo.unitEleven;
+package org.example.advaned.leejinwoo.unitTen;
 
 public class SocketAdapter implements Electronic110V{
 
