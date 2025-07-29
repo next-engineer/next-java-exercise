@@ -1,4 +1,4 @@
-package main.java.org.example.basic.ANheebin.onepROJECT;
+package org.example.basic.ANheebin.onepROJECT;
 
 import java.util.ArrayList;
 
