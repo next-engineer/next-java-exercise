@@ -1,4 +1,4 @@
-package main.java.org.example.basic.leeseungyeon.unitsix;
+package org.example.basic.leeseungyeon.unitsix;
 
 public class LambdaExample1 {
     public static void main(String[] args) {

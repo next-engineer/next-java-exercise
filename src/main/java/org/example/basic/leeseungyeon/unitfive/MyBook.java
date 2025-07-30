@@ -1,4 +1,4 @@
-package main.java.org.example.basic.leeseungyeon.unitfive;
+package org.example.basic.leeseungyeon.unitfive;
 
 public class MyBook {
     public static void main(String[] args) {

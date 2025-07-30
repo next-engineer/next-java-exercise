@@ -1,0 +1,20 @@
+기본 와일드카드
+List<?> list = new ArrayList<String>();
+? 안에 들어가는건 타입이 정해지지 않음
+
+상한 제한(extends)
+public void printNumbers(List<? extends Number> list) {
+    // Integer, Double, Float 등 가능
+}
+
+하한 제한(super)
+public void addIntegers(List<? super Integer> list) {
+    list.add(100); // Number, Object 타입 가능
+}
+
+✅ 6. 제네릭의 제한사항
+제한	                                                설명
+int, double 같은 원시 타입 사용 불가	                List<int> ❌ → List<Integer> 사용
+제네릭 타입으로 static 필드 선언 불가	                static T value ❌
+런타임에 타입 정보 소거 (Type Erasure)	                List<String> → List로 바뀜
+instanceof 검사 불가	                                if (obj instanceof List<String>) ❌
