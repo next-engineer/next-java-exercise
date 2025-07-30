@@ -13,10 +13,10 @@ public class NumberListExample {
         // 2. 최대값과 최소값 출력
         int max = Collections.max(numbers);
         int min = Collections.min(numbers);
-        System.out.println("🔺 최대값: " + max + ", 🔻 최소값: " + min);
+        System.out.println("최대값: " + max + ", 최소값: " + min);
 
         // 3. 오름차순 정렬
         Collections.sort(numbers);
-        System.out.println("📊 정렬된 리스트: " + numbers);
+        System.out.println("정렬된 리스트: " + numbers);
     }
 }

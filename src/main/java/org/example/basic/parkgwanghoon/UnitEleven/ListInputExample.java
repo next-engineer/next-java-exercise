@@ -18,7 +18,7 @@ public class ListInputExample {
             fruits.add(fruit);
         }
 
-        System.out.println("🍎 입력한 과일 리스트: " + fruits);
+        System.out.println("입력한 과일 리스트: " + fruits);
 
         scanner.close();
     }
