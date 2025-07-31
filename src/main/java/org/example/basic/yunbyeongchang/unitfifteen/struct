@@ -1,0 +1,19 @@
+Collection (인터페이스)
+├── List
+│   ├── ArrayList
+│   └── LinkedList
+├── Set
+│   ├── HashSet
+│   └── TreeSet
+└── Queue
+    ├── LinkedList
+    └── PriorityQueue
+
+Map (별도 인터페이스)
+├── HashMap
+└── TreeMap
+
+- 데이터가 많고 **조회 위주**일 경우: `ArrayList`, `HashMap`
+- **중복 제거**가 목적이라면: `Set`
+- **정렬된 데이터**를 다뤄야 하면: `TreeSet`, `TreeMap`
+- **작업 큐/비동기 처리**가 필요하면: `Queue`, `ConcurrentLinkedQueue`
