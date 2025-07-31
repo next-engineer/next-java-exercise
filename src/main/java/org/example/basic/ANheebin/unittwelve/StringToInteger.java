@@ -1,4 +1,4 @@
-package main.java.org.example.basic.ANheebin.unittwelve;
+package org.example.basic.ANheebin.unittwelve;
 
 import java.util.Scanner;
 

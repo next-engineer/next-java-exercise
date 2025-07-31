@@ -1,4 +1,4 @@
-package main.java.org.example.basic.ANheebin.unittfour;
+package org.example.basic.ANheebin.unittfour;
 
 import java.util.ArrayList;
 import java.util.Collections;
