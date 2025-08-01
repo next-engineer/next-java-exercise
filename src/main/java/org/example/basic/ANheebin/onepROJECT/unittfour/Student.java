@@ -16,4 +16,15 @@ public class Student {
     public void printInfo() {
         System.out.println("이름: " + name + ", 점수: " + score);
     }
+
+    public boolean gethighScore() {
+        return true;
+    }
+
+    public void printlnfo() {
+    }
+
+    public int getscore() {
+        return this.score;
+    }
 }
