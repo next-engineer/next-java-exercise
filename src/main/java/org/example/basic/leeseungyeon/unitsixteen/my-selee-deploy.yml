@@ -7,11 +7,11 @@ on:
 
 env:
   AWS_REGION: ap-northeast-2
-  ECR_REPOSITORY: your-ecr-repository-name
-  ECS_SERVICE: your-ecs-service-name
-  ECS_CLUSTER: your-ecs-cluster-name
-  ECS_TASK_DEFINITION_FAMILY: your-task-definition-name
-  CONTAINER_NAME: your-container-name
+  ECR_REPOSITORY: selee
+  ECS_SERVICE: selee-task-service
+  ECS_CLUSTER: next-team-first-cluster
+  ECS_TASK_DEFINITION_FAMILY: selee-task
+  CONTAINER_NAME: spring-api-container
 
 permissions:
   contents: read
