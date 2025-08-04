@@ -1,0 +1,68 @@
+name: Spring Boot API - AWS ECS 배포
+
+on:
+  push:
+    branches:
+      - main
+
+env:
+  AWS_REGION: ap-northeast-2
+  ECR_REPOSITORY: your-ecr-repository-name
+  ECS_SERVICE: your-ecs-service-name
+  ECS_CLUSTER: your-ecs-cluster-name
+  ECS_TASK_DEFINITION_FAMILY: your-task-definition-name
+  CONTAINER_NAME: your-container-name
+
+permissions:
+  contents: read
+  id-token: write
+
+jobs:
+  deploy:
+    name: ECS 배포
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Git Repository Checkout
+        uses: actions/checkout@v4
+
+      - name: AWS Credentials 설정
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: ${{ env.AWS_REGION }}
+
+      - name: ECR 로그인
+        id: login-ecr
+        uses: aws-actions/amazon-ecr-login@v2
+
+      - name: Docker 이미지 빌드, 태그, ECR에 푸시
+        id: build-image
+        env:
+          ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
+          IMAGE_TAG: ${{ github.sha }}
+        run: |
+          docker build -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG .
+          docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
+          echo "image=$ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG" >> $GITHUB_OUTPUT
+
+      - name: 기존 태스크 정의 다운로드
+        id: download-task-def
+        run: |
+          aws ecs describe-task-definition --task-definition ${{ env.ECS_TASK_DEFINITION_FAMILY }} > task-definition.json
+
+      - name: 새로운 이미지로 태스크 정의 업데이트
+        id: task-def
+        uses: aws-actions/amazon-ecs-render-task-definition@v1
+        with:
+          task-definition: task-definition.json
+          container-name: ${{ env.CONTAINER_NAME }}
+          image: ${{ steps.build-image.outputs.image }}
+
+      - name: ECS 서비스 재시작
+        uses: aws-actions/amazon-ecs-deploy-task-definition@v1
+        with:
+          task-definition: ${{ steps.task-def.outputs.task-definition }}
+          service: ${{ env.ECS_SERVICE }}
+          cluster: ${{ env.ECS_CLUSTER }}
