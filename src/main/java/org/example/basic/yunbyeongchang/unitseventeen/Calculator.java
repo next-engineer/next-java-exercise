@@ -1,22 +1,20 @@
 package org.example.basic.yunbyeongchang.unitseventeen;
 
 public class Calculator {
+    //var
+    private Operation operation;
 
-    public int calculate(String operator, int a, int b) {
-        if (operator.equals("add")) {
-            return a + b;
-        } else if (operator.equals("sub")) {
-            return a - b;
-        } else if (operator.equals("mul")) {
-            return a * b;
-        } else if (operator.equals("div")) {
-            if (b == 0) {
-                throw new IllegalArgumentException("0으로 나눌 수 없습니다.");
-            }
-            return a / b;
-        } else {
+    //method
+    public Calculator(Operation operation) {
+        this.operation = operation;
+    }
+
+    public int calculate(int a, int b) {
+        if(this.operation == null) {
             throw new IllegalArgumentException("지원하지 않는 연산입니다.");
         }
+
+        return operation.operation(a,b);
     }
 }
 
