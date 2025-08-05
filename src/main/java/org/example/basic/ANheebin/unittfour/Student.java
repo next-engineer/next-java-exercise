@@ -1,4 +1,4 @@
-package main.java.org.example.basic.ANheebin.unittfour;
+package org.example.basic.ANheebin.unittfour;
 
 public class Student {
     private String name;
