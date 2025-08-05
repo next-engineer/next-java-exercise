@@ -26,6 +26,7 @@ public class Calculator {
         }
     } //기본연산 
 
+    //결과
     private static int calculate(int number1, int number2, String operator){
         return switch (operator) {
             case "add" -> add(number1, number2);
