@@ -18,10 +18,5 @@ public class Calculator {
             throw new IllegalArgumentException("지원하지 않는 연산입니다.");
         }
     }
-
-    public static void main(String[] args) {
-        Calculator cal = new Calculator();
-        System.out.println(cal.calculate("add", 5, 3)); // 8
-    }
 }
 
