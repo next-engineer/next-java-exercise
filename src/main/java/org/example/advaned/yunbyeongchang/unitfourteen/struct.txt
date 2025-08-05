@@ -1,0 +1,9 @@
+[Context] ─────────────┐
+                      ▼
+            [Strategy interface]
+               ▲         ▲
+           [StrategyA] [StrategyB]
+
+- **Strategy 인터페이스**: 공통 행위 정의
+- **ConcreteStrategy (구현 클래스)**: 실제 알고리즘 구현
+- **Context**: 전략 객체를 주입받아 사용
