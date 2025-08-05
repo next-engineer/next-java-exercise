@@ -2,6 +2,7 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/next-front-base" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/next-java-exercise" vcs="Git" />
   </component>
 </project>
