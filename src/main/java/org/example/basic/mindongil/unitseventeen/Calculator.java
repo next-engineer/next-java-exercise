@@ -1,5 +1,5 @@
 package org.example.basic.mindongil.unitseventeen;
 
-public class Calculator {
-
+public interface Calculator {
+    int calculate(int numA, int numB);
 }
