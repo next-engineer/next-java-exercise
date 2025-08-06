@@ -11,7 +11,9 @@ public class Main {
 
         ComputerFacade computer = new ComputerFacade(cpu, memory, hd);
         computer.startComputer();
+        computer.startComputer();
 
+        computer.shutdownComputer();
         computer.shutdownComputer();
     }
 
