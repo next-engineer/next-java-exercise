@@ -1,0 +1,10 @@
+[Client]
+   |
+   v
+[Facade] --------> [SubsystemA]
+                    [SubsystemB]
+                    [SubsystemC]
+
+- `Client`: Facade를 통해 시스템 사용
+- `Facade`: 서브시스템을 조합하여 단순한 인터페이스 제공
+- `Subsystem`: 실제 로직이 구현되어 있는 클래스들
