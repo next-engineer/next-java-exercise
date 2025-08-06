@@ -12,4 +12,6 @@ public class NotificationSender {
         notification.send();
     }
 
+    public void sender() {
+    }
 }

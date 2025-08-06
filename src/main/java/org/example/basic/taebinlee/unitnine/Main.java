@@ -19,7 +19,7 @@ public class Main {
 
         // 점수와 학년 테스트
         System.out.println("\n잘못된 입력 테스트:");
-        org.example.basic.parkminji.unitnine.Student invalidStudent = new Student("오류 학생", 150, 10);  // 경고 출력
+        org.example.basic.parkminji.unitnine.Student invalidStudent = new org.example.basic.parkminji.unitnine.Student("오류 학생", 150, 10);  // 경고 출력
         invalidStudent.printInfo();
     }
 }
